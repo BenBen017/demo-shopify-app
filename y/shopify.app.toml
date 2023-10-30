@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "y"
+client_id = "cd0e3093e9cfea2add85e0e56e67bd7a"
+application_url = "https://pencil-needle-presenting-river.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://pencil-needle-presenting-river.trycloudflare.com/auth/callback",
+  "https://pencil-needle-presenting-river.trycloudflare.com/auth/shopify/callback",
+  "https://pencil-needle-presenting-river.trycloudflare.com/api/auth/callback",
+  "https://pencil-needle-presenting-river.trycloudflare.com/.shopify/graphiql/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "quickstart-c5da8dea.myshopify.com"
